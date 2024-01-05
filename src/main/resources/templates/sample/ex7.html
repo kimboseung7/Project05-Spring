@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<th:block th:each="dto: ${list}">
+		<p th:unless="${dto.no == 2}" th:text="${dto}"></p> 
+	</th:block>
+	
+	<h1>삼항연산자</h1>
+	<th:block th:each ="dto: ${List}">
+	
+			<p th:text="${dto.no==2}? ${dto} : --- "></p>  
+			<!-- 		식? 값1 : 값2
+			 	true 일때 결과 false 일때 결과 				-->
+			
+	</th:block>
+</body>
+</html>

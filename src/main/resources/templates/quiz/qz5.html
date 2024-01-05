@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>qz5</title>
+</head>
+<body>
+	<th:block th:each="a: ${arr}">
+		<span th:if="${a%2 == 0}" th:text="${a}"></span>
+	</th:block>
+</body>
+</html>
